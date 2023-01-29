@@ -66,3 +66,14 @@ k0s provides zero Friction, Deps and Cost
 	It's a no brainer foundation for any Kubernetes projects and easy build upon.
 	
 	
+## Comparision
+
+OKD, previously known as OpenShift Origin, is a distribution of Kubernetes that is developed and maintained by Red Hat. 
+It is built on top of Kubernetes and adds additional features and functionality to make it more enterprise-ready. 
+It includes a web console, command-line tools, and an API, which makes it easy to manage and scale applications.
+
+In comparison to k0s, OKD is more feature-rich and enterprise-ready, with additional functionality such as built-in continuous integration and continuous delivery (CI/CD), role-based access control (RBAC), and support for multiple languages and frameworks.
+
+In comparison to kops, OKD is more opinionated and provides a more comprehensive platform for managing and scaling applications. It also has a built-in web console and command-line tools that make it easy to manage and scale applications.
+
+In summary, k0s is a lightweight and easy-to-use Kubernetes distribution, kops is a tool for creating and managing production-grade Kubernetes clusters, and OKD is a distribution of Kubernetes that is built on top of Kubernetes and adds additional features and functionality to make it more enterprise-ready.
