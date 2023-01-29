@@ -29,6 +29,7 @@ CNI concerns itself only with network connectivity of containers and removing al
 | Calico   | Encapsulated (VXLAN,IPIP) OR Unencapsulated | Yes                | Yes              | Yes  | Etcd and K8s API   | Yes        | Yes                     |
 | Weave    | Encapsulated                                | Yes                | Yes              | Yes  | No                 | Yes        | Yes                     |
 | Cilium   | Encapsulated (VXLAN)                        | Yes                | Yes              | Yes  | Etcd and K8s API   | Yes        | Yes                     |
+
 *[source](https://ranchermanager.docs.rancher.com/faq/container-network-interface-providers)
 
 Based on comparision and poppularity, we are choosing "Cilium" as CNI provider.
