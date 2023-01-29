@@ -36,15 +36,16 @@ Layers
 	- Hosts
 		- ?
 	- Cluster Configuration
-		- kube-bench: Is my Kubernetes cluster installed and configured properly?
+		- kube-bench: Is my Kubernetes cluster installed and configured based on CIS Kubernetes Benchmark?
 		- checkov: Static code analysis - Are resources configured properly?
 - Build
 	- Application
-	- Container images
+	- Container images [Get vulnerable container](https://vulnerablecontainers.org/)
 		- trivy: Container image scanning - Are there vulnerabilities or misconfigurations on the 
-container image?
+container image? Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more.
 		- grype: Are there still more vulnerabilities on the container image?
 	- Deployment code
+		- clair: Vulnerability Static Analysis for Containers
 - Runtime
 		- syft: Software Bill of materials (SBOM) - What components are in my application and 
 container image?
@@ -67,6 +68,8 @@ on the system?
 		- [cubefs](https://cubefs.io/)
 		- Configuration based recoverability
 		- Security in a multi-tenant environment
+
+AWS on container security: [link](https://docs.aws.amazon.com/AmazonECS/latest/bestpracticesguide/security-runtime.html)
 
 ## observability and monitoring
 [Open Telemetry Monitor](https://github.com/open-telemetry/opentelemetry-operator)

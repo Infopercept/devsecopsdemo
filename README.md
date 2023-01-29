@@ -13,24 +13,6 @@ Contineous Integration:
 TODO: Need to complete list for demo.
 
 
-
-Container Layers:
-
-	Infrastructure
-		Cluster configuration
-		
-	Build
-	
-		Container image scanning
-		Software bill of materials and dependency
-	
-	Runtime
-		Container access policy
-		Resource utilization policy
-		Network isolation policy
-		Syscall, ownership mode
-		
-		
 # Notes from Saumya
 
 Code Scanning, Alerts, and Notification of Security Anomalies
@@ -75,24 +57,10 @@ Gsource ~ Github.
 
 ## General resources
 
-AWS: https://docs.aws.amazon.com/AmazonECS/latest/bestpracticesguide/security-runtime.html
 DevSecOps Introduction Video: https://www.youtube.com/watch?v=42UP1fxi2SY
 
 
-## Containser Scanning
-
-1. Trivy: Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more
-	URL - https://github.com/aquasecurity/trivy
-2. Clair: Vulnerability Static Analysis for Containers
-	URL: https://github.com/quay/clair
-Vulnerable container source: https://vulnerablecontainers.org/
-
-## Cluster configuration
-
-1. Kube-bench: Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark
-	URL: https://github.com/aquasecurity/kube-bench
-
-API Security:
+## API Security:
 
 1. Internal
 2. Third party
