@@ -32,37 +32,37 @@ Container Vulnerability Management
 ### Layered approach for k8s security
 
 Layers
-• Infrastructure
-	• Hosts
+- Infrastructure
+	- Hosts
 		- ?
-	• Cluster Configuration
+	- Cluster Configuration
 		- kube-bench: Is my Kubernetes cluster installed and configured properly?
 		- checkov: Static code analysis - Are resources configured properly?
-• Build
-	• Application
-	• Container images
+- Build
+	- Application
+	- Container images
 		- trivy: Container image scanning - Are there vulnerabilities or misconfigurations on the 
 container image?
 		- grype: Are there still more vulnerabilities on the container image?
-	• Deployment code
-• Runtime
+	- Deployment code
+- Runtime
 		- syft: Software Bill of materials (SBOM) - What components are in my application and 
 container image?
 		- dependency track: OWASP Dependency-Track - Do any components have newly identified 
 vulnerabilities?
-	• Policies
+	- Policies
 		- Open Policy Agent: Are my Kubernetes workloads and resources 
 following my rules?
-	• Resources
+	- Resources
 		- Goldilocks: Can a few containers hog too much 
 memory or CPU?
-	• Network
+	- Network
 		- networkpolicy.io: Can Kubernetes resources reach others they don’t 
 need to?
-	• System calls and interaction
+	- System calls and interaction
 		- falco: Are any workloads doing something unexpected
 on the system?
-	• Storage 
+	- Storage 
 		- [OpenEBS](https://www.cncf.io/online-programs/kubernetes-and-storage-kubernetes-for-storage-an-overview/)
 		- [cubefs](https://cubefs.io/)
 		- Configuration based recoverability
