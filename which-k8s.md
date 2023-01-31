@@ -42,7 +42,14 @@ Let's begin our journe to start testing candidates based on above parameters.
 
 For on-prem version, it is easy to setup with Openshift codebase + Fedora CoreOS
 
-It supports automated installation, patching, and updates from OS up.
+OKD supports automated installation, patching, and updates from OS up.
+
+OKD is a popular choice for private deployment of containerized applications. It provides a comprehensive platform for managing and deploying applications on top of Kubernetes. 
+OKD includes built-in CI/CD pipelines, integrated container registry, and integrated monitoring and logging. 
+It also provides security features such as network segmentation, role-based access control, and integrated secrets management.
+
+Additionally, OKD has a strong ecosystem of partners and integrations with other tools and services, making it a versatile platform for various use cases. 
+However, it's always a good idea to evaluate the specific requirements of your deployment before choosing any solution, to ensure it meets your needs.
 
 [Get OKD image](https://console.redhat.com/)
 
