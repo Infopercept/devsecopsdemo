@@ -1,0 +1,44 @@
+version: '3'
+services:
+  app:
+    build:
+      context: DevSecOpsDemo
+    ports:
+      - 80:80
+    depends_on:
+      - db
+  web:
+    build: 
+      context: ./web
+    ports:
+      - 3000:3000
+  weatherapi:
+    build: 
+      context: ./weatherapi
+    ports:
+      - 5000:5000
+  db:
+    image: microsoft/mssql-server-linux:2017-latest
+    environment:
+      SA_PASSWORD: "Passw0rd"
+      ACCEPT_EULA: "Y"
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+      - web
+      - weatherapi
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+  jenkins:
+    image: jenkins/jenkins:lts
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+volumes:
+  jenkins_data:
