@@ -1,4 +1,4 @@
-namespace DevSecOpsDemo.Models
+namespace ToDoApp.Models
 {
     public class ErrorViewModel
     {

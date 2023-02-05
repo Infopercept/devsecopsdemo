@@ -1,8 +1,8 @@
-﻿using DevSecOpsDemo.Models;
+﻿using ToDoApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace DevSecOpsDemo.Controllers
+namespace ToDoApp.Controllers
 {
     public class HomeController : Controller
     {
